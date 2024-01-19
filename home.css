@@ -1,0 +1,181 @@
+:root {
+    --colororg: #333333;
+    --color2 :#6528e0;
+    --fontaviny: aviny;
+    --fontlale: lale;
+    --fontirs: irs;
+}
+
+@font-face {
+    font-family: aviny;
+    src: url(aviny.ttf);
+}
+
+@font-face {
+    font-family: lale;
+    src: url(Lalezar-Regular.ttf);
+}
+
+@font-face {
+    font-family: irs;
+    src: url(IRANSansWeb_Bold.ttf);
+}
+body{
+    background: var(--colororg);
+    overflow-x: hidden !important;
+}
+h1,h2,h3,p{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    font-family: var(--fontlale);
+}
+/* mobile first design  */
+@media (min-width:300px){
+    #wel-notif{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .welimg{
+        width: 65%;
+        margin-top: -35px;
+        transition: all 2s;
+    }
+    #btn1{
+        color: white;
+        outline: none;
+        border: none;
+        stroke: none;
+        width: 256px;
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: blue;
+        margin-left: 58px;
+        border: none;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        cursor: pointer;
+        /* position: relative; */
+        overflow: hidden;
+        font-family: var(--fontirs);
+    }
+    #btn2{
+        color: rgb(0, 0, 0);
+        outline: none;
+        border: none;
+        stroke: none;
+        width: 256px;
+        padding: 10px 20px;
+        font-size: 18px;
+        /* background-color: blue; */
+        margin-left: 58px;
+        border: none;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        cursor: pointer;
+        /* position: relative; */
+        overflow: hidden;
+        font-family: var(--fontirs);
+    }
+    #btn3{
+        color: rgb(255, 255, 255);
+        outline: none;
+        border: none;
+        stroke: none;
+        width: 256px;
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: var(--color2);
+        margin-left: 58px;
+        border: none;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        cursor: pointer;
+        /* position: relative; */
+        overflow: hidden;
+        font-family: var(--fontirs);
+    }
+    #btn1:focus {
+        background-color: gray;
+        opacity: 0.5;
+}
+#sup p{
+ font-size: x-large;
+ font-family: Arial, Helvetica, sans-serif;
+}
+#footer p{
+  font-size: larger;
+}
+.welimg:hover{
+   box-shadow: 5px 5px 5px green;
+    transform: rotate(180deg);
+}
+}
+#btn1:hover,#btn2:hover{
+ background-color: gray;
+}
+/* another device design  */
+@media (min-width:500px){
+ .welimg{
+    width: fit-content;
+ }
+ #btn1{
+    color: white;
+    outline: none;
+    stroke: none;
+    width: 256px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: blue;
+    margin-left: 551px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    font-family: var(--fontirs);
+ }
+ #btn2{
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: none;
+    stroke: none;
+    width: 256px;
+    padding: 10px 20px;
+    font-size: 18px;
+    /* background-color: blue; */
+    margin-left: 551px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+    /* position: relative; */
+    overflow: hidden;
+    font-family: var(--fontirs);
+ }
+ #btn3{
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    stroke: none;
+    width: 256px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: var(--color2);
+    margin-left: 551px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+    /* position: relative; */
+    overflow: hidden;
+    font-family: var(--fontirs);
+ }
+ #btn3:hover{
+    opacity: 0.5;
+ }
+}

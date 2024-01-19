@@ -1,0 +1,146 @@
+:root {
+    --colororg: #333333;
+    --color2: #6528e0;
+    --fontaviny: aviny;
+    --fontlale: lale;
+    --fontirs: irs;
+}
+
+@font-face {
+    font-family: aviny;
+    src: url(aviny.ttf);
+}
+
+@font-face {
+    font-family: lale;
+    src: url(Lalezar-Regular.ttf);
+}
+
+@font-face {
+    font-family: irs;
+    src: url(IRANSansWeb_Bold.ttf);
+}
+
+body {
+    background: var(--colororg);
+    overflow-x: hidden !important;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    font-family: var(--fontlale);
+}
+
+header {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    font-size: 27px;
+}
+
+/* mfd  */
+@media (min-width:300px) {
+    .imglogo {
+        width: 150px;
+    }
+
+    #head-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sign-form {
+        border: 3px solid white;
+        height: 268px;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .sign-form input {
+        background-color: var(--colororg);
+        width: 313px;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin-left: 4px;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .sign-form input::placeholder {
+        text-align: center;
+    }
+
+    #btn1 {
+        color: rgb(255, 255, 255);
+        outline: none;
+        border: none;
+        stroke: none;
+        width: 256px;
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: var(--color2);
+        margin-left: 45px;
+        border: none;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        cursor: pointer;
+        /* position: relative; */
+        overflow: hidden;
+        font-family: var(--fontirs);
+    }
+}
+
+/* add  */
+@media (min-width:500px) {
+    .sign-form {
+        border: 3px solid white;
+        height: 268px;
+        background-color: white;
+        border-radius: 10px;
+        width: 609px;
+        margin-left: 358px;
+    }
+
+    .sign-form input {
+        background-color: var(--colororg);
+        width: 313px;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin-left: 97px;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        width: 369px;
+    }
+
+    #btn1 {
+        background-color: var(--color2);
+        width: 313px;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin-left: 97px;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        width: 369px;
+    }
+    #btn1:hover{
+        opacity: 0.5;
+        background-color: gray;
+    }
+}

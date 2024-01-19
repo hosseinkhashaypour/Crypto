@@ -1,0 +1,93 @@
+:root {
+    --colororg: #333333;
+    --color2: #6528e0;
+    --fontaviny: aviny;
+    --fontlale: lale;
+    --fontirs: irs;
+}
+
+@font-face {
+    font-family: aviny;
+    src: url(aviny.ttf);
+}
+
+@font-face {
+    font-family: lale;
+    src: url(Lalezar-Regular.ttf);
+}
+
+@font-face {
+    font-family: irs;
+    src: url(IRANSansWeb_Bold.ttf);
+}
+
+body {
+    background: var(--colororg);
+    overflow-x: hidden !important;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    font-family: var(--fontlale);
+}
+
+header {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    font-size: 27px;
+    color: white;
+}
+/* mfd  */
+@media (min-width:300px){
+    .img-head{
+        width: 50px;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    margin: 20px;
+    padding: 10px;
+}
+
+nav {
+    display: none;
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    background-color: #555;
+}
